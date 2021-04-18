@@ -1,0 +1,96 @@
+.app-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 45px;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+}
+
+.app-header .header-title-wrapper {
+    float: left;
+    height: 35px;
+    /* margin-top: 10px; */
+}
+
+.app-header .header-title-wrapper:hover{
+    cursor: pointer;
+}
+
+.app-header .header-title-wrapper .content {
+    font-size: 2rem;
+    float: left;
+    margin-right: 15px;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 15px;
+
+}
+
+.app-header .header-title-wrapper .logo {
+    height: 50px;
+}
+
+.app-header .header-title-wrapper span {
+    font-size: .95rem;
+    margin-top: 12px;
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 170px);
+    word-break: normal;
+}
+
+.app-header .header-actions {
+    float: right;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    height: 70px;
+}
+
+.app-header .header-actions li:first-of-type {
+    margin-left: 0;
+    border: none;
+    padding-left: 0;
+}
+
+.app-header .header-actions li {
+    float: left;
+    margin-left: 12px;
+    border-left: 1px solid #38393a;
+    padding-left: 12px;
+    height: 24px;
+    list-style: none
+}
+
+.app-header .header-actions li a {
+    color: inherit;
+}
+
+.app-header .header-actions .btn {
+    cursor: pointer;
+}
+
+.app-header .header-actions .btn-icon {
+    font-size: 1.4rem;
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 46.25em){
+    .app-header .header-title-wrapper .content{
+        font-size: 2rem;
+    }
+
+    .app-header .header-actions .btn-icon{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,22 @@
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 50% 0;
+  /* background: #00CAE9; */
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;;
+  top: 50%;;
+  margin: -20px 0 0 -20px;
+  z-index: 3;
+}
+.marker:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin: 5px 1px 0 5px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}

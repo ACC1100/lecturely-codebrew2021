@@ -1,0 +1,198 @@
+.interval-floats {
+  width: 1%;
+  height: 10px;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 2;
+}
+
+.party-page {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.party-page .player-container {
+  width: 77%;
+}
+
+.party-not-found-container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.party-not-found-container .header{
+  display: inline-block;
+}
+
+.party-not-found-container .description{
+  display: inline-block;
+}
+
+.party-not-found-container .back-btn{
+  opacity: 0.7;
+  display: table;
+  padding: 10px;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  margin-top: 15px;
+  font-size: 1.5vw;
+}
+
+.party-not-found-container .back-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*==================================*/
+/* Media queries */
+/*----------------------------------*/
+
+@media screen and (max-width: 46.25em) {
+  .party-page .share-party-url .title,
+  .party-page .share-party-url input,
+  .party-page .users-in-party-list .title,
+  .party-page .users-in-party-list .user .user-name {
+      font-size: 0.75rem;
+  }
+
+  .party-page .share-party-url input {
+      margin: 5px 0 5px 10px;
+  }
+
+  .party-page .player-container {
+      width: 100%;
+  }
+
+  .party-page .users-in-party-list {
+      margin: 10px 0 0 0;
+  }
+
+  .party-not-found-container .header{
+      font-size: 1.3rem;
+  }
+
+  .party-not-found-container .description,
+  .party-not-found-container .back-btn {
+      font-size: 0.7rem;
+  }
+
+}
+
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+ .progress-radial {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FDCD50;
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(90deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-5 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(108deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-10 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-15 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-20 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-25 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-30 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-40 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-45 {
+  background-image: linear-gradient(90deg, #eeeeee 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-50 {
+  background-image: linear-gradient(-90deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-55 {
+  background-image: linear-gradient(-72deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-60 {
+  background-image: linear-gradient(-54deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-65 {
+  background-image: linear-gradient(-36deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-70 {
+  background-image: linear-gradient(-18deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-75 {
+  background-image: linear-gradient(0deg, #FDCD50  50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50  50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-80 {
+  background-image: linear-gradient(18deg, #FDCD50   50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-85 {
+  background-image: linear-gradient(36deg, #FDCD50   50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-90 {
+  background-image: linear-gradient(54deg, #FDCD50   50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-95 {
+  background-image: linear-gradient(72deg, #FDCD50   50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #FDCD50   50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #FDCD50   50%, #eeeeee 50%, #eeeeee);
+}
