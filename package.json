@@ -1,0 +1,64 @@
+{
+  "name": "lecturely",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=7.x",
+    "npm": ">=3.x"
+  },
+  "scripts": {
+    "start": "concurrently -r \"npm run start:server\" \"npm run start:client\"",
+    "start:client": "react-scripts start",
+    "start:server": "nodemon --require reify ./server/main.js",
+    "start-prod": "npm run start-prod:server",
+    "start-prod:server": "DEBUG=APP:MAIN cross-env NODE_ENV=production node --require reify ./server/main.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "proxy": {
+    "/socket.io": {
+      "target": "ws://localhost:3001",
+      "ws": true
+    }
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.5.1",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "classnames": "2.2.5",
+    "compression": "1.7.0",
+    "concurrently": "3.5.0",
+    "cross-env": "5.0.1",
+    "debug": "2.6.8",
+    "express": "4.15.3",
+    "font-awesome": "4.7.0",
+    "framer-motion": "^4.1.4",
+    "helmet": "3.8.1",
+    "lodash": "4.17.4",
+    "mongoose": "^5.12.4",
+    "npm": "5.3.0",
+    "query-string": "5.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-icons": "^4.2.0",
+    "react-player": "^0.24.6",
+    "react-redux": "5.0.5",
+    "react-router": "3.0.5",
+    "react-scripts": "1.0.10",
+    "react-truncate": "2.1.5",
+    "redux": "3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-socket.io": "1.4.0",
+    "redux-thunk": "2.2.0",
+    "seamless-immutable": "7.1.2",
+    "socket.io": "2.0.3",
+    "socket.io-client": "2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0",
+    "reify": "0.4.4"
+  }
+}
